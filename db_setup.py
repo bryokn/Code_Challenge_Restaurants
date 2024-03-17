@@ -10,6 +10,15 @@ cursor.execute('''
                    price INTEGER
                )
                ''')
+
+cursor.execute('''
+               CREATE TABLE IF NOT EXISTS customers (
+                   id INTEGER PRIMARY KEY,
+                   first_name TEXT,
+                   last_name TEXT
+               )
+               ''')
+
 cursor.execute('''
                CREATE TABLE IF NOT EXISTS reviews(
                    id INTEGER PRIMARY KEY,
