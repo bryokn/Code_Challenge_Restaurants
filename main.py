@@ -15,9 +15,9 @@ cursor.execute('INSERT OR IGNORE INTO customers (first_name, last_name) VALUES (
 cursor.execute('INSERT OR IGNORE INTO customers (first_name, last_name) VALUES (?, ?)', ('Joan', 'Bett'))
 cursor.execute('INSERT OR IGNORE INTO customers (first_name, last_name) VALUES (?, ?)', ('You', 'Guy'))
 
-cursor.execute('INSERT OR IGNORE INTO reviews (restaurant_id, customer_id, star_rating) VALUES (?, ?, ?)', (1 ,1, 5))
-cursor.execute('INSERT OR IGNORE INTO reviews (restaurant_id, customer_id, star_rating) VALUES (?, ?, ?)', (2, 2, 4))
-cursor.execute('INSERT OR IGNORE INTO reviews (restaurant_id, customer_id, star_rating) VALUES (?, ?, ?)', (3, 3, 4))
+cursor.execute('INSERT OR IGNORE INTO reviews (restaurant_id, customer_id, star_rating) VALUES (?, ?, ?)', (1 ,1, '⭐⭐⭐⭐⭐'))
+cursor.execute('INSERT OR IGNORE INTO reviews (restaurant_id, customer_id, star_rating) VALUES (?, ?, ?)', (2, 2, '⭐⭐⭐⭐'))
+cursor.execute('INSERT OR IGNORE INTO reviews (restaurant_id, customer_id, star_rating) VALUES (?, ?, ?)', (3, 3, '⭐⭐⭐⭐'))
 
 conn.commit()
 

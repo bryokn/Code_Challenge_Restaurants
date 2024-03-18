@@ -116,12 +116,15 @@ class Review:
         customer = self.customer(cursor)
         restaurant = self.restaurant(cursor)
         if customer and restaurant:
-            return f"Review for {restaurant.name} by {customer.full_name()}: {self.star_rating} stars."
+            #convert integer star rating to star characters
+            stars = '⭐' * int(self.star_rating)
+            return f"Review for {restaurant.name} by {customer.first_name} {customer.last_name}: {stars} stars."
     
     #string representation of Review object
     def __str__(self, cursor):
         review_details = self.full_review(cursor)
         if review_details:
-            return review_details
+            stars ='⭐' * int(self.star_rating)
+            return f"{review_details[:-9]}{stars} stars."
         else:
             return f"Review ID: {self.id} Restaurant ID: {self.restaurant_id}, Customer ID: {self.customer_id}, Rating: {self.star_rating}"
