@@ -26,7 +26,7 @@ To use the Restaurant Management System:
 Testing Restaurant Methods:
 
 Reviews for restaurant_a:
-Review for Java by Brian Kipkirui: 5 stars.
+Review for Java by Brian Kipkirui: ⭐⭐⭐⭐⭐ stars.
 
 Customers of restaurant_a:
 Customer ID: 1 Name: Brian Kipkirui
@@ -34,7 +34,7 @@ Customer ID: 1 Name: Brian Kipkirui
 Testing Customer Methods:
 
 Reviews by Brian:
-Review for Java by Brian Kipkirui: 5 stars.
+Review for Java by Brian Kipkirui: ⭐⭐⭐⭐⭐ stars.
 
 Restaurants visited by Brian:
 Restaurant ID: 1, Name: Java, Price: 3
